@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+<head>
+<title>nodes</title>
+<meta charset="utf-8" />
+<link href="includes/css/style.css" rel="stylesheet" type="text/css" />
+<link href="includes/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<!--[if lte IE 7]><link href="includes/css/style-ie.css" rel="stylesheet" type="text/css" /><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="includes/css/device.css" rel="stylesheet" type="text/css" media="only screen and (max-device-width: 768px)" />
+<!--[if IE 6]><script type="text/javascript" src="includes/js/ie6.notify.js"></script><![endif]-->
+<style type="text/css">
+article { margin:0 0 50px 0; }
+h1 sup a { font-size:11px; }
+</style>
+</head>
+<body>
+	<div id="container">
+		
+		<header id="header">
+			<div id="logo">
+				<h3><a href="#" title="f2fw">f2fw</a></h3>
+			</div><!-- end #logo -->
+			<nav id="menu">
+				<ul>
+					<li>Choose:</li>
+					<li><a href="#base" title="Base">Base</a></li>
+					<li><a href="#layout" title="Layout">Layout</a></li>
+					<li><a href="#columns" title="Columns">Columns</a></li>
+					<li><a href="#typography" title="Typography">Typography</a></li>
+					<li><a href="#navigation" title="Navigation">Navigation</a></li>
+					<li><a href="#notifications" title="Notifications">Notifications</a></li>
+					<li><a href="#debug" title="Debug">Debug</a></li>
+					<div class="clearing"></div>
+				</ul>
+			</nav><!-- end #menu -->
+			<div class="clearing"></div>
+		</header><!-- end #header -->
+
+		<article id="base">
+			<h1>Base <sup><a href="http://f2fw.com/docs/base" title="Base">docs</a></sup></h1>
+			<p class="p16">Base reduces cross-browsers inconsistencies by reseting HTML tags using an updated version of Eric Meyer Reset CSS<sup> (<a href="http://meyerweb.com/eric/tools/css/reset/" title="Eric Meyer" target="_blank">1</a>)</sup> that also includes the new HTML5 tags.</p>
+			<p>Base acts as a master reset and is automatically included with the framework. The new HTML5 tags added with the 0.1.7 release: <span class="tag">article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video</span>.</p>
+		</article><!-- end #base -->
+
+		<article id="layout">
+			<h1>Layout <sup><a href="http://f2fw.com/docs/layout" title="Layout">docs</a></sup></h1>
+			<p class="p16">Layout is responsible with important components like logo, menu, buttons or with common used CSS classes, such as the ones related to float, margins, padding, borders, and so on.</p>
+			<p>With the DRY (Don't Repeat Yourself) principle in mind, the following common CSS classes have proven to be highly valuable and useful in web development:</p>
+			<ol>
+				<li><strong>Floats</strong>: floatleft, floatright, floatnone</li>
+				<li><strong>Clearing</strong>: clearing, clearfix</li>
+				<li><strong>Alignments</strong>: alignleft, alignright, aligncenter</li>
+				<li><strong>Margins</strong>: marginauto, nomargintop, nomarginright, nomarginbottom, nomarginleft</li>
+				<li><strong>Borders</strong>: noborder, nobordertop, noborderright, noborderbottom, noborderleft</li>
+				<li><strong>Paddings</strong>: padding, nopadding, nopaddingtop, nopaddingright, nopaddingbottom, nopaddingleft</li>
+			</ol>
+			<h4>BIA: Buttons, icons and arrows</h4>
+			<p>With a BIA class (btt, ico, arr), you can easily add buttons from external files, using the CSS Sprites technique, by only adding a width, height and a background position. Buttons already have the <strong>btt.png</strong> file applied, while icons and arrows have the <strong>ico.png</strong> and, respectively, the <strong>arr.png</strong> files.</p>
+
+<pre>a.btt-login { width:50px; height:20px; background-position:-10px -10px; }
+a.btt-login:hover { background-position:-10px -50px; }</pre>
+<code>&lt;a href="#" title="#" class="btt btt-login"&gt;Login&lt;/a&gt;</code>
+
+		</article><!-- end #layout -->
+	
+		<article id="columns">
+			<h1>Columns <sup><a href="http://f2fw.com/docs/columns" title="Columns">docs</a></sup></h1>
+			<p class="p16">Columns uses a intuitive grid-like system to help you create layouts and you have up to 6 adaptable columns containers: you define your own width and margins.</p>
+			<p>A two column layout is composed from the main container, with a <strong>c2</strong> class applied, and its children containers with a <strong>c21</strong> and <strong>c22</strong> class. You can clear the floated inner childrens, either by adding a <strong>clearing</strong> class after closing the last children or add a new class, <strong>clearfix</strong>, along with the c2 class applied.</p>
+<pre>&lt;div id="column" class="c2"&gt;
+	&lt;div class="c21"&gt;
+
+	&lt;/div&gt;&lt;!-- end c21 --&gt;
+	&lt;div class="c22"&gt;
+
+	&lt;/div&gt;&lt;!-- end c22 --&gt;
+	&lt;div class="clearing"&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;!-- end c2 --&gt;</pre>
+			<div class="c2 clearfix">
+				<div class="c21">
+					<p>Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop. When the going gets tough, he's really rough, with a Hong Kong Phooey chop (Hi-Ya!). Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. Hong Kong Phooey, he's fan-riffic!</p>
+				</div><!-- end .c21 -->
+				<div class="c22">
+					<p>Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop. When the going gets tough, he's really rough, with a Hong Kong Phooey chop (Hi-Ya!). Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. Hong Kong Phooey, he's fan-riffic!</p>
+				</div><!-- end .c22 -->
+			
+			</div><!-- end .c2 -->
+			
+			<div class="c3 clearfix">
+				<div class="c31">
+					<p>Ten years ago a crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Today, still wanted by the government, they survive as soldiers of fortune. If you have a problem and no one else can help, and if you can find them, maybe you can hire the A-team.</p>
+				</div><!-- end .c31 -->
+				<div class="c32">
+					<p>Ten years ago a crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Today, still wanted by the government, they survive as soldiers of fortune. If you have a problem and no one else can help, and if you can find them, maybe you can hire the A-team.</p>
+				</div><!-- end .c32 -->
+				<div class="c33">
+					<p>Ten years ago a crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Today, still wanted by the government, they survive as soldiers of fortune. If you have a problem and no one else can help, and if you can find them, maybe you can hire the A-team.</p>
+				</div><!-- end .c33 -->
+			</div><!-- end .c3 -->
+			
+			<div class="c4 clearfix">
+				<div class="c41">
+					<p>There's a voice that keeps on calling me. Down the road, that's where I'll always be. Every stop I make, I make a new friend. Can't stay for long, just turn around and I'm gone again. Maybe tomorrow, I'll want to settle down, Until tomorrow, I'll just keep moving on.</p>
+				</div><!-- end .c41 -->
+				<div class="c42">
+					<p>There's a voice that keeps on calling me. Down the road, that's where I'll always be. Every stop I make, I make a new friend. Can't stay for long, just turn around and I'm gone again. Maybe tomorrow, I'll want to settle down, Until tomorrow, I'll just keep moving on.</p>
+				</div><!-- end .c42 -->
+				<div class="c43">
+					<p>There's a voice that keeps on calling me. Down the road, that's where I'll always be. Every stop I make, I make a new friend. Can't stay for long, just turn around and I'm gone again. Maybe tomorrow, I'll want to settle down, Until tomorrow, I'll just keep moving on.</p>
+				</div><!-- end .c43 -->
+				<div class="c44">
+					<p>There's a voice that keeps on calling me. Down the road, that's where I'll always be. Every stop I make, I make a new friend. Can't stay for long, just turn around and I'm gone again. Maybe tomorrow, I'll want to settle down, Until tomorrow, I'll just keep moving on.</p>
+				</div><!-- end .c44 -->
+			</div><!-- end .c4 -->
+			
+			<div class="c5 clearfix">
+				<div class="c51">
+					<p>Ten years ago a crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Today, still wanted by the government, they survive as soldiers of fortune. If you have a problem and no one else can help, and if you can find them, maybe you can hire the A-team.</p>
+				</div><!-- end .c51 -->
+				<div class="c52">
+					<p>Ten years ago a crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Today, still wanted by the government, they survive as soldiers of fortune. If you have a problem and no one else can help, and if you can find them, maybe you can hire the A-team.</p>
+				</div><!-- end .c52 -->
+				<div class="c53">
+					<p>Ten years ago a crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Today, still wanted by the government, they survive as soldiers of fortune. If you have a problem and no one else can help, and if you can find them, maybe you can hire the A-team.</p>
+				</div><!-- end .c53 -->
+				<div class="c54">
+					<p>Ten years ago a crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Today, still wanted by the government, they survive as soldiers of fortune. If you have a problem and no one else can help, and if you can find them, maybe you can hire the A-team.</p>
+				</div><!-- end .c54 -->
+				<div class="c55">
+					<p>Ten years ago a crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Today, still wanted by the government, they survive as soldiers of fortune. If you have a problem and no one else can help, and if you can find them, maybe you can hire the A-team.</p>
+				</div><!-- end .c55 -->
+			</div><!-- end .c5 -->
+			
+			<div class="c6 clearfix">
+				<div class="c61">
+					<p>This is my boss, Jonathan Hart, a self-made millionaire, he's quite a guy. This is Mrs H., she's gorgeous, she's one lady who knows how to take care of herself. By the way, my name is Max. I take care of both of them, which ain't easy, 'cause when they met it was MURDER!</p>
+				</div><!-- end .c61 -->
+				<div class="c62">
+					<p>This is my boss, Jonathan Hart, a self-made millionaire, he's quite a guy. This is Mrs H., she's gorgeous, she's one lady who knows how to take care of herself. By the way, my name is Max. I take care of both of them, which ain't easy, 'cause when they met it was MURDER!</p>
+				</div><!-- end .c62 -->
+				<div class="c63">
+					<p>This is my boss, Jonathan Hart, a self-made millionaire, he's quite a guy. This is Mrs H., she's gorgeous, she's one lady who knows how to take care of herself. By the way, my name is Max. I take care of both of them, which ain't easy, 'cause when they met it was MURDER!</p>
+				</div><!-- end .c63 -->
+				<div class="c64">
+					<p>This is my boss, Jonathan Hart, a self-made millionaire, he's quite a guy. This is Mrs H., she's gorgeous, she's one lady who knows how to take care of herself. By the way, my name is Max. I take care of both of them, which ain't easy, 'cause when they met it was MURDER!</p>
+				</div><!-- end .c65 -->
+				<div class="c65">
+					<p>This is my boss, Jonathan Hart, a self-made millionaire, he's quite a guy. This is Mrs H., she's gorgeous, she's one lady who knows how to take care of herself. By the way, my name is Max. I take care of both of them, which ain't easy, 'cause when they met it was MURDER!</p>
+				</div><!-- end .c65 -->
+				<div class="c66">
+					<p>This is my boss, Jonathan Hart, a self-made millionaire, he's quite a guy. This is Mrs H., she's gorgeous, she's one lady who knows how to take care of herself. By the way, my name is Max. I take care of both of them, which ain't easy, 'cause when they met it was MURDER!</p>
+				</div><!-- end .c66 -->
+			</div><!-- end .c6 -->
+
+		</article><!-- end #columns -->
+		
+		<article id="typography">
+			<h1>Typography <sup><a href="http://f2fw.com/docs/typography" title="Typography">docs</a></sup></h1>
+			<p class="p16">Typography adds basic styling for HTML tags related to typography.</p>
+			
+			<p>Top Cat! The <strong>most effectual</strong> Top Cat! Who's intellectual close friends get to call him T.C., providing<sub>[1]</sub> it's with dignity. Top Cat! The <em>indisputable leader</em> of the gang. He's the boss, <small>he's a pip</small>, he's the championship. He's the most tip<sup>[1]</sup> top, Top Cat.</p>
+			<h2>Hong Kong Phooey, number one super guy. (h2)</h2>
+			<p>Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop. When the going gets tough, he's really rough, with a Hong Kong Phooey chop (Hi-Ya!). Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. Hong Kong Phooey, he's fan-riffic!</p>
+			<ul>
+				<li>Mutley, you snickering, floppy eared hound.</li>
+				<li>When courage is needed, you're never around.</li>
+				<li>Those medals you wear on your moth-eaten chest should be there for bungling at which you are best.
+					<ul>
+						<li>Mutley, you snickering, floppy eared hound.</li>
+						<li>When courage is needed, you're never around.</li>
+					</ul>
+				</li>
+				<li>Thunder, thunder, thunder, Thundercats! Thundercats!</li>
+			</ul>
+			<h3>Soaring through all the galaxies. (h3)</h3>
+			<p>Ulysses, Ulysses - Soaring through all the galaxies. In search of Earth, flying in to the night. Ulysses, Ulysses - Fighting evil and tyranny, with all his power, and with all of his might. Ulysses - no-one else can do the things you do. Ulysses - like a bolt of thunder from the blue. Ulysses - always fighting all the evil forces bringing peace and justice to all.</p>
+			<blockquote>
+				<p>Ulysses, Ulysses - Soaring through all the galaxies. In search of Earth, flying in to the night. Ulysses, Ulysses: Fighting evil and tyranny, with all his power, and with all of his might.</p>
+				<p>Fighting evil and tyranny, with all his power, and with all of his might. Ulysses</p>
+				<p class="author">&mdash; <a href="#" title="#">David</a>, from Inc.</p>
+			</blockquote>
+			<p>Ulysses, Ulysses - Soaring through all the galaxies. In search of Earth, flying in to the night. Ulysses, Ulysses - Fighting evil and tyranny, with all his power, and with all of his might. Ulysses - no-one else can do the things you do. Ulysses - like a bolt of thunder from the blue. Ulysses - always fighting all the evil forces bringing peace and justice to all.</p>
+			<ol>
+				<li>Howwww! Nab him, jab him, tab him, grab him, stop that pigeon now.</li>
+				<li>He's the boss, he's a pip, he's the championship. He's the most tip top, Top Cat.
+					<ol>
+						<li>Howwww! Nab him, jab him, tab him, grab him, stop that pigeon now.</li>
+						<li>He's the boss, he's a pip, he's the championship. He's the most tip top, Top Cat.</li>
+					</ol>
+				</li>
+			</ol>
+			<h4>Ulysses - always fighting all the evil forces (h4)</h4>
+			<p>Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop. When the going gets tough, he's really rough, with a Hong Kong Phooey chop (Hi-Ya!). Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. Hong Kong Phooey, he's fan-riffic!</p>
+			<h5>Hong Kong Phooey, quicker than the human eye. (h5)</h5>
+			<pre>Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop. When the going gets tough, he's really rough, with a Hong Kong Phooey chop (Hi-Ya!). Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. Hong Kong Phooey, he's fan-riffic!</pre>
+			<h6>He's got style, a groovy style, and a car. (h6)</h6>
+			<p>Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop. When the going gets tough, he's really rough, with a Hong Kong Phooey chop (Hi-Ya!). Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. Hong Kong Phooey, he's fan-riffic!</p>
+
+			<table>
+				<tr>
+					<th>Number</th>
+					<th>Text for column one</th>
+					<th>Text for column two</th>
+				</tr>
+				<tr>
+					<td>#1</td>
+					<td>Hong Kong Phooey, quicker than the human eye.</td>
+					<td>Hong Kong Phooey, quicker than the human eye.</td>
+				</tr>
+				<tr>
+					<td>#2</td>
+					<td>Hong Kong Phooey, quicker than the human eye.</td>
+					<td>Hong Kong Phooey, quicker than the human eye. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop.</td>
+				</tr>
+				<tr>
+					<td>#3</td>
+					<td>Hong Kong Phooey, quicker than the human eye.</td>
+					<td>Hong Kong Phooey, quicker than the human eye.</td>
+				</tr>
+				<tr>
+					<td>#4</td>
+					<td>Hong Kong Phooey, quicker than the human eye.</td>
+					<td>Hong Kong Phooey, quicker than the human eye. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop.</td>
+				</tr>
+			</table>
+
+			<p>Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop. When the going gets tough, he's really rough, with a Hong Kong Phooey chop (Hi-Ya!). Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. Hong Kong Phooey, he's fan-riffic!</p>	
+			<hr />
+			
+			<address>
+				<strong>Address</strong><br />
+				Hong Kong Phooey<br />
+				Quicker than the human eye.
+			</address>
+			
+			<hr />
+			<p>Hong Kong Phooey, number one super guy. Hong Kong Phooey, <abbr title="quicker">quicker</abbr> than the human eye. He's got style, a groovy style, and a car that just won't stop. When the going gets tough, he's really rough, with a Hong Kong Phooey chop (Hi-Ya!). Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. Hong Kong Phooey, he's fan-riffic!</p>
+			
+			<ol class="nostyle">
+				<li>Howwww! Nab him, jab him, tab him, grab him, stop that pigeon now.</li>
+				<li>He's the boss, he's a pip, he's the championship. He's the most tip top, Top Cat.
+					<ol>
+						<li>Howwww! Nab him, jab him, tab him, grab him, stop that pigeon now.</li>
+						<li>He's the boss, he's a pip, he's the championship. He's the most tip top, Top Cat.</li>
+					</ol>
+				</li>
+			</ol>
+		</article><!-- end #typography -->
+
+		<article id="navigation">
+			<h1>Navigation <sup><a href="http://f2fw.com/docs/navigation" title="Navigation">docs</a></sup></h1>
+			<p class="p16">Navigation adds components for a web document, such as: breadcrumbs, tabs, pagination and jump to the top.</p>
+			
+			<h4>Breadcrumbs</h4>
+			<div class="breadcrumbs">
+				<p><a href="#" title="#">Home</a> <span class="sep">&rarr;</span> <a href="#" title="#">Page</a> <span class="sep">&rarr;</span> <span class="current"> Inside</span></p>
+			</div><!-- end .breadcrumbs -->
+			<p>Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop.</p>
+			
+			<h4>Tabs</h4>
+			<p>Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop.</p>
+			<div class="tabs">
+				<div class="tabs-n">
+					<ul>
+						<li><a href="#" title="#">The first tab: inactive</a></li>
+						<li class="active"><a href="#" title="#">The second tab: active</a></li>
+						<li><a href="#" title="#">The third tab: inactive</a></li>
+						<div class="clearing"></div>
+					</ul>
+				</div><!-- end .tabs-n -->
+				<div class="tabs-c">
+					<p>Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop.</p>
+					<h4>Ulysses - always fighting all the evil forces (h4)</h4>
+					<p>Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop. When the going gets tough, he's really rough, with a Hong Kong Phooey chop (Hi-Ya!). Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. Hong Kong Phooey, he's fan-riffic!</p>
+				</div><!-- end .tabs-c -->
+			</div><!-- end .tabs -->
+			
+			<h4>Pagination</h4>
+			<p>Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop.</p>
+			<div class="pagination">
+				<p><span class="page">Page 2</span> <a href="#" title="#" class="ext">&lsaquo; Previous</a><a href="#" title="#">1</a><a href="#" title="#" class="active">2</a><a href="#" title="#">...</a><a href="#" title="#">19</a><a href="#" title="#">20</a><a href="#" title="#" class="ext">Next &rsaquo;</a></p>
+			</div><!-- end .pagination -->
+			
+			<h4>Jump to the top</h4>
+			<p>Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop.</p>
+			<div class="jump">
+				<p>&uarr; <a href="#" title="#">To the top</a></p>
+			</div><!-- end .jump -->
+			
+		</article><!-- end #navigation -->
+		
+		<article id="notifications">
+			<h1>Notifications <sup><a href="http://f2fw.com/docs/notifications" title="Notifications">docs</a></sup></h1>
+			<p class="p16">Notifications includes 4 types of styled messages, like: information, success, warning and error message.</p>
+			
+			<div class="notifications">
+				<div class="inform">
+					<p class="title">Inform</p>
+					<p>Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop.</p>
+				</div><!-- end .inform -->
+				<div class="success">
+					<p class="title">Success</p>
+					<p>Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop.</p>
+				</div><!-- end .success -->
+				<div class="warning">
+					<p class="title">Warning</p>
+					<p>Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop.</p>
+				</div><!-- end .warning -->
+				<div class="error">
+					<p class="title">Error</p>
+					<p>Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop.</p>
+				</div><!-- end .error -->
+			</div><!-- end .notifications -->
+		</article><!-- end #notifications -->
+
+		<article id="debug">
+			<h1>Debug <sup><a href="http://f2fw.com/docs/debug" title="Debug">docs</a></sup></h1>
+			<p class="p16">Start debugging your HTML/CSS by simply adding a "debug" class to the "body" element.</p>
+			<p>A common and quite effective way to debug CSS issues is to add various colored borders to your containers; with <strong>Debug</strong> you can easily do that by appending the <strong>debug</strong> class to your body tag: this will automatically insert borders to each framework's node main container and its inner children.</p>
+		</article><!-- end #debug -->
+		
+	</div><!-- end #container -->
+</body>
+</html>

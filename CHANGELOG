@@ -1,0 +1,72 @@
+{0.1.7: 27 August 2011}
+	Overview
+		- 0.1.7 reorganizes components of 0.1.6 in nodes under the following names: Base, Layout, Columns, Typography, Navigation, Notifications, Debug.
+		- 0.1.7 introduces Debug, an easier way to debug your CSS with the use of different colored borders by appending a "debug" class to the body element of your web document.
+		- 0.1.7 adds support for mobile devices, such as the iPhone or the iPad, with the use of the viewport meta tag
+		
+	Base
+		- Base acts as a master CSS reset using an updated version of the Eric Meyer Reset CSS
+		- support for the new HTML5 tags, such as: article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video
+		
+	Layout
+		- removed text-align:center from body; it was originally added to center the main container in IE6 and below.
+		- #wrap and .wrap are now renamed in #wrapper; .wrap was used to wrap floated elements in various situations and kept inheritance from .wrap/#wrap
+		- #wrap and #container now set at 1024px width
+		- added overflow-y scroll to html; to always add a vertical scrollbar
+		- added a new class, floatnone, with float:none
+		- added a new class, nopadding, with padding:0
+		- added a new class, noborder, with border:0
+		- removed forms element from 0.1.6 (for now)
+	
+	Columns
+		- updated columns to match 1024px width
+	
+	Navigation
+		- breadcrumbs is now more simplified: span.sep and span.current
+		- pagination is now more simplified: span.page, a.active and a.ext
+		- notifications adds p.title
+	
+	Printer
+		- set black color for all links
+		- set black color for notifications message
+		- pagination and jump to the top from Navigation are not set to "display:none"
+		
+	Responsive
+		- added the viewport meta tag to include device.css
+		- removed fixed widths and floatings from Layout and Columns
+		- resized fonts from Typography
+		
+{0.1.6: 06 March 2011}
+	General
+		- Added new class, marginauto, with margin:0 auto.
+		- Rewritten the #header #logo h3 a to include only width and height as the image is already called from the framework with.
+
+	Forms
+		- Added new class for submit button of form: ipt-btt-submit.
+
+{0.1.5: 15 November 2010}
+	Typography
+		- Changes to pre tag.
+
+{0.1.4: 24 April 2010}
+	General
+		- Added text-align:left to #container.
+		- Removed margin-top for all heading tags; increased margin-bottom instead.
+		- Changed list-style-position to outside for ul li and ol li tags.
+		- Removed #page #left and #page #right.
+
+	Typography
+		- Added line-height to 18px for p, ul li tags.
+
+	Breadcrumbs
+		- Renamed span from inside d-breadcrumbs to span.s-separator.
+		- Added span.s-active for active state inside d-breadcrumbs.
+
+	Tabs
+		- Renamed d-tabs-nav to d-tabs-n, d-tabs-content to d-tabs-c, d-tabs-n ul li a.active to d-tabs-n ul li a.a-active.
+
+	Pagination
+		- Renamed d-pagination a.active to d-pagination a.a-active, d-pagination span.page-no to d-pagination span.s-page-no.
+
+	Notifications
+		- Added !important to d-notice-error and d-notice-no to overwrite p style.

@@ -1,0 +1,187 @@
+/*
+	f2fw: progessive html/css framework
+	http://f2fw.com
+
+	Version: 0.1.7
+ 	Updated: 27 August 2011
+	License: Apache 2.0
+
+	------------------------------------------------------------------------
+	
+	device.css
+	
+	------------------------------------------------------------------------
+
+	Copyright 2011 Artmov
+
+   	Licensed under the Apache License, Version 2.0 (the "License");
+   	you may not use this file except in compliance with the License.
+   	You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+   	Unless required by applicable law or agreed to in writing, software
+   	distributed under the License is distributed on an "AS IS" BASIS,
+   	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   	See the License for the specific language governing permissions and
+   	limitations under the License.
+*/
+
+
+
+/*
+	*
+	*
+	*	Layout
+	*
+	*
+*/
+#wrapper,
+#container {
+	width:100%;
+	padding:5%;
+	margin:2% auto;
+	text-align:left;
+}
+#logo,
+#menu {
+	float:none;
+}
+
+
+
+
+/*
+	*
+	*
+	*	Typography
+	*
+	*
+*/
+h1 {
+	font-size:2.0em;
+	line-height:1.2em;
+}
+h2 {
+	font-size:1.8em;
+	line-height:1.2em;
+}
+h3 {
+	font-size:1.6em;
+	line-height:1.2em;
+}
+h4 {
+	font-size:1.4em;
+	line-height:1.2em;
+}
+h5 {
+	font-size:1.2em;
+	line-height:1.2em;
+}
+h6 {
+	font-size:1.0em;
+	line-height:1.2em;
+}
+p,
+address {
+	font-size:0.9em;
+	line-height:1.3em;
+}
+p.p16 {
+	font-size:1.2em;
+	line-height:1.2em;
+}
+ul li,
+ol li {
+	font-size:0.9em;
+	line-height:1.3em;
+}
+pre,
+code {
+	font-size:1.2em;
+	line-height:1.2em;
+}
+blockquote {
+	font-size:1.0em;
+	line-height:1.3em;
+	padding:0;
+}
+blockquote p {
+	font-size:1.0em;
+	line-height:1.3em;
+}
+table {
+	font-size:0.9em;
+	line-height:1.2em;
+}
+table td,
+table th {
+	padding:4px;
+}
+
+
+
+
+
+/*
+	*
+	*
+	*	Columns
+	*
+	*
+*/
+div.c2,
+div.c3,
+div.c4,
+div.c5,
+div.c6 {
+	display:block;
+}
+div.c2 div.c21,
+div.c2 div.c22,
+div.c3 div.c31, 
+div.c3 div.c32,
+div.c3 div.c33,
+div.c4 div.c41,
+div.c4 div.c42,
+div.c4 div.c43,
+div.c4 div.c44,
+div.c5 div.c51,
+div.c5 div.c52,
+div.c5 div.c53,
+div.c5 div.c54,
+div.c5 div.c55,
+div.c6 div.c61,
+div.c6 div.c62,
+div.c6 div.c63,
+div.c6 div.c63,
+div.c6 div.c64,
+div.c6 div.c65,
+div.c6 div.c66 {
+	float:none;
+	width:100%;
+	margin-right:0;
+}
+
+
+
+
+/*
+	*
+	*
+	*	Navigation
+	*
+	*
+*/
+div.tabs div.tabs-n ul li {
+	float:none;
+	font-size:0.9em;
+	line-height:1.2em;
+}
+div.tabs div.tabs-n ul li a {
+	border-bottom:0;
+	margin-right:0;
+}
+div.tabs div.tabs-c {
+	margin-top:0;
+}

@@ -1,0 +1,41 @@
+f2fw
+progressive html/css framework
+
+----------------------------------------------------------------------------
+
+Hello.
+
+The f2 framework (f2fw) gives you a step ahead on your front-end development
+by implementing the most important and common components of a web document,
+while keeping an intuitive structure of the code that allows you to create
+customizable layouts easily.
+
+While I recommend you have the full version, you can build the framework
+with a few nodes less, if you wish. You can choose between Base, Layout,
+Columns, Typography, Navigation, Notifications, Debug.
+
+It also comes built-in with a printer-friendly side and a responsive-ready
+layout that is optimized for the iPhone or the iPad (and other touch-phones)
+
+The custom builder is available at http://f2fw.com
+
+Contribute on Github at http://github.com/artmov/f2fw
+
+....	index.html
+....	includes/
+	....	includes/css/
+		....	includes/css/style.css
+		....	includes/css/style-ie.css
+		....	includes/css/print.css
+		....	includes/css/device.css
+	....	includes/js/
+		....	/includes/js/ie6.notify.js
+	....	includes/images/
+	....	includes/pictures/
+	....	includes/fonts/
+
+Start.
+
+----------------------------------------------------------------------------
+
+http://f2fw.com
