@@ -870,8 +870,8 @@ body.debug #logo,
 body.debug #logo h3,
 body.debug #logo h3 a,
 body.debug #menu,
-body.debug #menu ul
-body.debug #menu ul li
+body.debug #menu ul,
+body.debug #menu ul li,
 body.debug #menu ul li a {
 	border:1px solid red !important;
 }
