@@ -3,7 +3,7 @@ progressive html/css framework
 
 ----------------------------------------------------------------------------
 
-includes/images/ serves to maintain web document specific images, such as:
+includes/images/ serves for document specific images, such as:
 background, buttons, logo, etcetera.
 
 ----------------------------------------------------------------------------

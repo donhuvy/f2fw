@@ -1,3 +1,11 @@
+{0.1.8: 01 Octomber 2011}
+	BIA
+		- Added span and input for both .ico and .arr
+
+	Typography
+		- changes to overall typography elements line-heights and margins
+		- added "lines" class to test if elements are in 18px line-height; can be appended to the "body".
+
 {0.1.7: 27 August 2011}
 	Overview
 		- 0.1.7 reorganizes components of 0.1.6 in nodes under the following names: Base, Layout, Columns, Typography, Navigation, Notifications, Debug.

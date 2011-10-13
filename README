@@ -3,7 +3,7 @@ progressive html/css framework
 
 ----------------------------------------------------------------------------
 
-Hello.
+Hello,
 
 The f2 framework (f2fw) gives you a step ahead on your front-end development
 by implementing the most important and common components of a web document,
@@ -21,6 +21,8 @@ The custom builder is available at http://f2fw.com
 
 Contribute on Github at http://github.com/artmov/f2fw
 
+Start.
+
 ....	index.html
 ....	includes/
 	....	includes/css/
@@ -31,10 +33,9 @@ Contribute on Github at http://github.com/artmov/f2fw
 	....	includes/js/
 		....	/includes/js/ie6.notify.js
 	....	includes/images/
+		....	/includes/images/line18.png
 	....	includes/pictures/
 	....	includes/fonts/
-
-Start.
 
 ----------------------------------------------------------------------------
 

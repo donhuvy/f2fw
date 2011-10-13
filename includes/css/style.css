@@ -2,8 +2,8 @@
 	f2fw: progessive html/css framework
 	http://f2fw.com
 
-	Version: 0.1.7
- 	Updated: 27 August 2011
+	Version: 0.1.8
+ 	Updated: 01 Octomber 2011
 	License: Apache 2.0
 
 	------------------------------------------------------------------------
@@ -161,17 +161,25 @@ body {
 	line-height:18px;
 }
 
+/*
+	* Setting everything at a 18px line-height with _lines
+*/
+body.lines {
+	background:url(../images/_lines.png) repeat;
+}
+
 #wrapper,
 #container {
 	width:1024px;
-	margin:50px auto;
+	margin:36px auto;
 	text-align:left;
 }
 
 #header {
 	display:block;
 	width:100%;
-	margin:0 0 50px 0;
+	line-height:36px;
+	margin:0 0 36px 0;
 }
 
 /*
@@ -185,7 +193,7 @@ body {
 }
 #logo h3 {
 	font-size:25px;
-	line-height:25px;
+	line-height:54px;
 	margin:0;
 }
 #logo h3.incl a {
@@ -195,7 +203,6 @@ body {
 	line-height:0;
 }
 
-/* menu is positioned the same as logo. plus we are adding :last-of-tpye (!) to remove margin-right */
 #menu {
 	float:right;
 }
@@ -207,7 +214,7 @@ body {
 	display:block;
 	float:left;
 	font-size:12px;
-	line-height:25px;
+	line-height:54px;
 	margin:0 10px 0 0;
 	list-style-type:none;
 	list-style-position:outside;
@@ -335,24 +342,36 @@ img.floatright {
 	*	("Buttons, icons and arrows")
 */
 a.btt,
+span.btt,
 input.btt,
 a.ico,
-a.arr {
+span.ico,
+input.ico,
+a.arr,
+span.arr,
+input.arr {
 	display:block;
 	font-size:0;
 	line-height:0;
 	text-indent:-9999px;
 	color:transparent !important;
 	overflow:hidden;
+	cursor:pointer;
+	border:0;
 }
 a.btt,
+span.btt,
 input.btt {
 	background:url(../images/btt.png) no-repeat 0 0;
 }
-a.ico {
+a.ico,
+span.ico,
+input.ico {
 	background:url(../images/ico.png) no-repeat 0 0;
 }
-a.arr {
+a.arr,
+span.arr,
+input.arr {
 	background:url(../images/arr.png) no-repeat 0 0;
 }
 
@@ -394,41 +413,41 @@ h5,
 h6 {
 	font-weight:bold;
 	color:#000;
-	margin:0 0 15px 0;
+	margin:0 0 18px 0;
 }
 h1 {
 	font-size:30px;
-	line-height:30px;
+	line-height:36px;
 }
 h2 {
 	font-size:25px;
-	line-height:25px;
+	line-height:36px;
 }
 h3 {
 	font-size:20px;
-	line-height:20px;
+	line-height:36px;
 }
 h4 {
 	font-size:17px;
-	line-height:17px;
+	line-height:18px;
 }
 h5 {
 	font-size:15px;
-	line-height:15px;
+	line-height:18px;
 }
 h6 {
 	font-size:13px;
-	line-height:13px;
+	line-height:18px;
 }
 p {
 	font-size:12px;
 	line-height:18px;
 	color:#333;
-	margin:0 0 15px 0;
+	margin:0 0 18px 0;
 }
 p.p16 {
 	font-size:16px;
-	line-height:22px;
+	line-height:18px;
 	color:#555;
 }
 small {
@@ -455,7 +474,7 @@ sub {
 
 ul,
 ol {
-	padding:0 10px 15px 5px;
+	padding:0 10px 18px 5px;
 	margin:0 0 0 10px;
 }
 ul li {
@@ -467,19 +486,19 @@ ol li {
 ul li,
 ol li {
 	font-size:12px;
-	line-height:18px;
 	color:#333;
-	margin:0 0 5px 0;
+	line-height:18px;
+	margin:0 0 18px 0;
 	list-style-position:outside;
 }
 ul li ul,
 ol li ol {
-	padding:0 10px 0 10px;
+	padding:0 10px;
 }
 ul li ul li,
 ol li ol li {
 	color:#555;
-	margin:5px 0;
+	margin:0;
 }
 ul li:last-child,
 ol li:last-child {
@@ -493,7 +512,7 @@ ol li:last-child {
 ul.nostyle,
 ol.nostyle {
 	margin:0;
-	padding:0 0 15px 0;
+	padding:0 0 18px 0;
 }
 ul.nostyle li,
 ol.nostyle li {
@@ -506,9 +525,9 @@ code {
 	background:#F9F9F9;
 	font-family:Courier New, Arial, sans-serif;
 	font-size:14px;
-	line-height:20px;
-	padding:5px 10px;
-	margin:0 0 15px 0;
+	line-height:18px;
+	padding:8px 10px;
+	margin:0 0 18px 0;
 	border:1px solid #CCC;
 	white-space:pre-wrap;
 	white-space:-moz-pre-wrap !important;
@@ -516,7 +535,7 @@ code {
 	white-space:-o-pre-wrap;
 	word-wrap:break-word;
 }
-pre :last-child {
+pre:last-child {
 	margin:0;
 }
 address {
@@ -524,7 +543,7 @@ address {
 	font-style:normal;
 	line-height:18px;
 	color:#555;
-	margin:0 0 15px 0;
+	margin:0 0 18px 0;
 }
 abbr {
 	cursor:help;
@@ -537,20 +556,20 @@ abbr {
 */
 blockquote {
 	font-family:Georgia, sans-serif;
-	font-size:20px;
-	line-height:27px;
+	font-size:16px;
+	line-height:18px;
 	color:#666;
 	padding:0 50px;
-	margin:0 0 15px 0;
+	margin:0 0 18px 0;
 }
 blockquote p {
-	font-size:20px;
-	line-height:27px;
+	font-size:16px;
+	line-height:18px;
 	color:#666;
 }
 blockquote p.author {
 	font-size:14px;
-	line-height:16px;
+	line-height:18px;
 	color:#999;
 	margin:0;
 }
@@ -563,18 +582,18 @@ hr {
 	height:1px;
 	background:#CCC;
 	border:0;
-	margin:0 0 15px 0;
+	margin:0 0 18px 0;
 }
 table {
 	width:100%;
 	border-collapse:collapse;
 	line-height:18px;
-	margin:0 0 15px 0;
+	margin:0 0 18px 0;
 }
 table th,
 table td {
 	border:1px solid #CCC;
-	padding:5px 10px;
+	padding:10px 10px;
 	vertical-align:middle;
 }
 table th {
@@ -717,7 +736,7 @@ div.c6 div.c66 {
 	*
 */
 div.breadcrumbs {
-	margin:0 0 15px 0;
+	margin:0 0 18px 0;
 }
 div.breadcrumbs p {
 	margin:0;
@@ -730,7 +749,7 @@ div.breadcrumbs p span.current {
 }
 
 div.tabs {
-	margin:0 0 15px 0;
+	margin:0 0 18px 0;
 }
 div.tabs div.tabs-n ul {
 	display:block;
@@ -742,14 +761,14 @@ div.tabs div.tabs-n ul li {
 	float:left;
 	background:#EEE;
 	font-size:14px;
-	line-height:22px;
+	line-height:18px;
 	margin:0;
 	list-style-type:none;
 	list-style-position:outside;
 }
 div.tabs div.tabs-n ul li a {
 	display:block;
-	padding:5px 10px;
+	padding:7px 10px;
 	border:1px solid #CCC;
 	margin-right:-1px;
 }
@@ -766,21 +785,19 @@ div.tabs div.tabs-c {
 }
 
 div.jump {
-	margin:0 0 15px 0;
+	margin:0 0 18px 0;
 }
 div.jump p {
 	font-size:11px;
-	line-height:16px;
 	color:#444;
 	margin:0;
 }
 
 div.pagination {
-	margin:0 0 15px 0;
+	margin:0 0 18px 0;
 }
 div.pagination p {
 	font-size:14px;
-	line-height:22px;
 	margin:0;
 }
 div.pagination p span.page {
