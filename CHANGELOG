@@ -1,10 +1,20 @@
+{0.1.9: 12 December 2011}
+	Columns
+		- new Columns module; now with percentage.
+		
+	Navigation
+		- new Pagination module.
+
+	Typography
+		- "lines" removed.
+
 {0.1.8: 01 Octomber 2011}
 	BIA
-		- Added span and input for both .ico and .arr
+		- The .ico/.arr elements supports both span and input
 
 	Typography
 		- changes to overall typography elements line-heights and margins
-		- added "lines" class to test if elements are in 18px line-height; can be appended to the "body".
+		- added "lines" class to test if elements are in 18px line-height; can be appended to the "body"
 
 {0.1.7: 27 August 2011}
 	Overview

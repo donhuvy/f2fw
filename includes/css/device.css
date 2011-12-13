@@ -2,8 +2,8 @@
 	f2fw: progessive html/css framework
 	http://f2fw.com
 
-	Version: 0.1.7
- 	Updated: 27 August 2011
+	Version: 0.1.9
+ 	Updated: 13 December 2011
 	License: Apache 2.0
 
 	------------------------------------------------------------------------
@@ -28,6 +28,25 @@
 */
 
 
+/*
+	*
+	*	iPad
+	*
+*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	
+}
+
+/*
+	*
+	*	iPhone
+	*
+*/
+@media screen and (max-width: 768px) {
+	
+
+}
 
 /*
 	*

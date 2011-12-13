@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 <head>
-<title>nodes</title>
 <meta charset="utf-8" />
+<title>nodes</title>
 <link href="includes/css/style.css" rel="stylesheet" type="text/css" />
 <link href="includes/css/print.css" rel="stylesheet" type="text/css" media="print" />
 <!--[if lte IE 7]><link href="includes/css/style-ie.css" rel="stylesheet" type="text/css" /><![endif]-->
@@ -279,7 +279,23 @@ a.btt-login:hover { background-position:-10px -50px; }</pre>
 			<h4>Pagination</h4>
 			<p>Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop.</p>
 			<div class="pagination">
-				<p><span class="page">Page 2</span> <a href="#" title="#" class="ext">&lsaquo; Previous</a><a href="#" title="#">1</a><a href="#" title="#" class="active">2</a><a href="#" title="#">...</a><a href="#" title="#">19</a><a href="#" title="#">20</a><a href="#" title="#" class="ext">Next &rsaquo;</a></p>
+				<ul class="clearfix">
+					<li class="page">Page 2</li>
+					<li class="ext"><a href="#" title="#">&larr; Prev</a></li>
+					<li class="active"><a href="#" title="#">1</a></li>
+					<li><a href="#" title="#">2</a></li>
+					<li class="between">
+						<a href="#" title="#">...</a>
+						<form method="post" action="/">
+							<label for="page-no">Which page?</label>
+							<input type="text" id="page-no" name="page" class="ipt" placeholder="e.g. 2" required="required" pattern="[-0-9]+" />
+							<input type="submit" name="submit" value="&rarr;" class="ipt-submit" />
+						</form>
+					</li>
+					<li><a href="#" title="#">19</a></li>
+					<li><a href="#" title="#">20</a</li>
+					<li class="ext"><a href="#" title="#">Next &rarr;</a></li>
+				</ul>
 			</div><!-- end .pagination -->
 			
 			<h4>Jump to the top</h4>
