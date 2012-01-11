@@ -2,8 +2,8 @@
 	f2fw: progessive html/css framework
 	http://f2fw.com
 
-	Version: 0.1.9
- 	Updated: 13 December 2011
+	Version: 2.0.0
+ 	Updated: 11 January 2012
 	License: Apache 2.0
 
 	------------------------------------------------------------------------
@@ -26,10 +26,6 @@
    	See the License for the specific language governing permissions and
    	limitations under the License.
 */
-
-
-
-
 
 /*
 	*
@@ -115,10 +111,6 @@ video {
 	font-family:inherit;
 	vertical-align:baseline;
 }
-
-/*
-	*	Setting the new HTML5 tags to be block elements
-*/
 article,
 aside,
 details,
@@ -131,10 +123,6 @@ nav,
 section {
 	display:block;
 }
-
-
-
-
 
 /*
 	*
@@ -195,7 +183,6 @@ body {
 	text-indent:-9999px;
 	line-height:0;
 }
-
 #menu {
 	float:right;
 }
@@ -368,10 +355,6 @@ input.arr {
 	background:url(../images/arr.png) no-repeat 0 0;
 }
 
-
-
-
-
 /*
 	*
 	*
@@ -397,7 +380,6 @@ a:hover {
 a:active {
 	color:#FF0000;
 }
-
 h1,
 h2,
 h3,
@@ -464,7 +446,6 @@ sup {
 sub {
 	bottom:-0.5em;
 }
-
 ul,
 ol {
 	padding:0 10px 18px 5px;
@@ -511,15 +492,11 @@ ul.nostyle li,
 ol.nostyle li {
 	list-style-type:none;
 }
-
 pre,
 code {
-	display:block;
 	background:#F9F9F9;
-	font-family:Courier New, Arial, sans-serif;
-	font-size:14px;
-	line-height:18px;
-	padding:8px 10px;
+	font:normal 14px/18px Courier New, Arial, sans-serif;
+	padding:2px 4px;
 	margin:0 0 18px 0;
 	border:1px solid #CCC;
 	white-space:pre-wrap;
@@ -530,6 +507,10 @@ code {
 }
 pre:last-child {
 	margin:0;
+}
+code {
+	padding:8px 10px;
+	display:block;
 }
 address {
 	font-size:12px;
@@ -569,7 +550,6 @@ blockquote p.author {
 blockquote :last-child {
 	margin:0;
 }
-
 hr {
 	width:100%;
 	height:1px;
@@ -594,10 +574,6 @@ table th {
 	font-weight:bold;
 }
 
-
-
-
-
 /*
 	*
 	*
@@ -615,7 +591,6 @@ div.c5,
 div.c6 {
 	display:block;
 }
-
 div.c2 div.c21 {
 	float:left;
 	width:49%;
@@ -624,7 +599,6 @@ div.c2 div.c22 {
 	float:right;
 	width:49%;
 }
-
 div.c3 div.c31 {
 	float:left;
 	width:32%;
@@ -639,7 +613,6 @@ div.c3 div.c33 {
 	float:left;
 	width:32%;
 }
-
 div.c4 div.c41 {
 	float:left;
 	width:23.5%;
@@ -659,7 +632,6 @@ div.c4 div.c44 {
 	float:left;
 	width:23.5%;
 }
-
 div.c5 div.c51 {
 	float:left;
 	width:18.4%;
@@ -684,7 +656,6 @@ div.c5 div.c55 {
 	float:left;
 	width:18.4%;
 }
-
 div.c6 div.c61 {
 	float:left;
 	width:15%;
@@ -715,10 +686,6 @@ div.c6 div.c66 {
 	width:15%;
 }
 
-
-
-
-
 /*
 	*
 	*
@@ -740,7 +707,6 @@ div.breadcrumbs p span.sep {
 div.breadcrumbs p span.current {
 	color:#333;
 }
-
 div.tabs {
 	margin:0 0 18px 0;
 }
@@ -776,7 +742,6 @@ div.tabs div.tabs-c {
 	margin-top:-1px;
 	border:1px solid #CCC;
 }
-
 div.jump {
 	margin:0 0 18px 0;
 }
@@ -785,7 +750,6 @@ div.jump p {
 	color:#444;
 	margin:0;
 }
-
 div.pagination {
 	margin:0 0 18px 0;
 }
@@ -854,10 +818,6 @@ div.pagination ul li.active a {
 	color:#c70c27;
 }
 
-
-
-
-
 /*
 	*
 	*
@@ -902,10 +862,6 @@ div.notifications p.title {
 	padding:10px 10px 0 10px;
 }
 
-
-
-
-
 /*
 	*
 	*
@@ -917,7 +873,6 @@ div.notifications p.title {
 	*
 	*
 */
-
 body.debug #wrapper,
 body.debug #container,
 body.debug #header,
@@ -930,19 +885,21 @@ body.debug #menu ul li,
 body.debug #menu ul li a {
 	border:1px solid red !important;
 }
-body.debug .clearing,
+body.debug .clearing:after,
 body.debug .clearfix:after {
-	display:block;
-	width:100%;
-	height:20px;
-	background:black;
-}
-body.debug .clearfix:after {
-	color:#FFF;
 	visibility:visible;
-	content:"[clearfix]";
+	background:black;
+	display:block;
+	height:20px;
+	width:100%;
+	color:#FFF;
 }
-
+body.debug .clearing:after {
+	content:"(clearing)";
+}
+body.debug .clearfix:after {
+	content:"(clearfix)";
+}
 body.debug div.c2,
 body.debug div.c3,
 body.debug div.c4,
@@ -970,7 +927,6 @@ body.debug div.c6 div.c65,
 body.debug div.c6 div.c66 {
 	border:1px solid green !important;
 }
-
 body.debug h1,
 body.debug h2,
 body.debug h3,
@@ -1001,7 +957,6 @@ body.debug code,
 body.debug hr {
 	border:1px solid black !important;
 }
-
 body.debug div.breadcrumbs,
 body.debug div.breadcrumbs p,
 body.debug div.breadcrumbs span,
@@ -1019,7 +974,6 @@ body.debug div.pagination span,
 body.debug div.pagination a {
 	border:1px solid navy !important;
 }
-
 body.debug div.notifications,
 body.debug div.notifications div.inform,
 body.debug div.notifications div.success,
