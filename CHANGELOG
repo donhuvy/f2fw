@@ -1,3 +1,7 @@
+{2.0.2: 14 January 2011}
+	Typography
+		- Incorrect behaviour of "code" inside a "pre"
+
 {2.0.1: 12 January 2011}
 	Typography
 		- Fixed "code" to be block and "pre" to be inline.
