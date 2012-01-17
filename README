@@ -25,7 +25,8 @@ Start.
 ....	includes/
 	....	includes/css/
 		....	includes/css/style.css
-		....	includes/css/style-ie.css
+		....	includes/css/style-ie8.css
+		....	includes/css/style-ie7.css
 		....	includes/css/print.css
 		....	includes/css/device.css
 	....	includes/js/
