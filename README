@@ -1,21 +1,18 @@
-f2fw
-progressive html/css framework
+F2fw
+HTML/CSS framework for PSD/AI to HTML/CSS
 
 ----------------------------------------------------------------------------
 
 Hello,
 
-The F2 framework (f2fw) gives you a step ahead on your front-end development
+The F2 framework (F2fw) gives you a step ahead on your front-end development
 by implementing the most important and common components of a web document,
 while keeping an intuitive structure of the code that allows you to create
 customizable layouts easily.
 
 While I recommend you have the full version, you can build the framework
 with a few nodes less, if you wish. You can choose between Base, Layout,
-Columns, Typography, Navigation, Notifications, Debug.
-
-It also comes built-in with a printer-friendly side and a stylesheet ready
-for iPhone and/or iPad usage.
+Columns, Typography, Navigation, Notifications.
 
 Contribute on Github at http://github.com/artmov/f2fw
 

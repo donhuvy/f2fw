@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>f2fw nodes</title>
+<title>F2fw nodes</title>
 
 <link href="includes/css/style.css" rel="stylesheet" type="text/css" />
 <link href="includes/css/print.css" rel="stylesheet" type="text/css" media="print" />
@@ -16,6 +16,7 @@
 article { margin:0 0 54px 0; }
 h1 sup a { font-size:11px; }
 </style>
+
 </head>
 <body>
 	<div id="container">
@@ -33,54 +34,52 @@ h1 sup a { font-size:11px; }
 					<li><a href="#typography" title="Typography">Typography</a></li>
 					<li><a href="#navigation" title="Navigation">Navigation</a></li>
 					<li><a href="#notifications" title="Notifications">Notifications</a></li>
-					<li><a href="#debug" title="Debug">Debug</a></li>
-					<div class="clearing"></div>
+					<div class="cl"></div>
 				</ul>
 			</nav><!-- end #menu -->
-			<div class="clearing"></div>
+			<div class="cl"></div>
 		</header><!-- end #header -->
 
 		<article id="base">
-			<h1>Base <sup><a href="http://f2fw.com/docs/base" title="Base">docs</a></sup></h1>
+			<h1>Base <sup><a href="http://f2fw.com/documentation/base" title="Base">docs</a></sup></h1>
 			<p class="p16">Base reduces cross-browsers inconsistencies by reseting HTML tags using an updated version of Eric Meyer Reset CSS<sup> (<a href="http://meyerweb.com/eric/tools/css/reset/" title="Eric Meyer" target="_blank">1</a>)</sup> that also includes the new HTML5 tags.</p>
 			<p>Base acts as a master reset and is automatically included with the framework. The new HTML5 tags added with the 0.1.7 release: <span class="tag">article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video</span>.</p>
 		</article><!-- end #base -->
 
 		<article id="layout">
-			<h1>Layout <sup><a href="http://f2fw.com/docs/layout" title="Layout">docs</a></sup></h1>
+			<h1>Layout <sup><a href="http://f2fw.com/documentation/layout" title="Layout">docs</a></sup></h1>
 			<p class="p16">Layout is responsible with important components like logo, menu, buttons or with common used CSS classes, such as the ones related to float, margins, padding, borders, and so on.</p>
 			<p>With the DRY (Don't Repeat Yourself) principle in mind, the following common CSS classes have proven to be highly valuable and useful in web development:</p>
 			<ol>
-				<li><strong>Floats</strong>: floatleft, floatright, floatnone</li>
-				<li><strong>Clearing</strong>: clearing, clearfix</li>
-				<li><strong>Alignments</strong>: alignleft, alignright, aligncenter</li>
-				<li><strong>Margins</strong>: marginauto, nomargintop, nomarginright, nomarginbottom, nomarginleft</li>
-				<li><strong>Borders</strong>: noborder, nobordertop, noborderright, noborderbottom, noborderleft</li>
-				<li><strong>Paddings</strong>: padding, nopadding, nopaddingtop, nopaddingright, nopaddingbottom, nopaddingleft</li>
+				<li><strong>Floats</strong>: lf (left float), rf (right float), nf (no float)</li>
+				<li><strong>Clearing</strong>: cl (clearing), cf (clearfix)</li>
+				<li><strong>Alignments</strong>: al (align left), ar (align right), ac (align center)</li>
+				<li><strong>Margins</strong>: ma (margin auto), nmt (no margin top), nmr (no margin right), nmb (no margin bottom), nml (no margin left)</li>
+				<li><strong>Borders</strong>: nb (no border), nbt (no border top), nbr (no border right), nbb (no border bottom), nbl (no border left)</li>
+				<li><strong>Paddings</strong>: p (padding), np (no padding), npt (no padding top), npr (no padding right), npb (no padding bottom), npl (no padding left)</li>
 			</ol>
 			<h4>BIA: Buttons, icons and arrows</h4>
 			<p>With a BIA class (btt, ico, arr), you can easily add buttons from external files, using the CSS Sprites technique, by only adding a width, height and a background position. Buttons already have the <strong>btt.png</strong> file applied, while icons and arrows have the <strong>ico.png</strong> and, respectively, the <strong>arr.png</strong> files.</p>
 
 <pre>a.btt-login { width:50px; height:20px; background-position:-10px -10px; }
 a.btt-login:hover { background-position:-10px -50px; }</pre>
-<code>&lt;a href="#" title="#" class="btt btt-login"&gt;Login&lt;/a&gt;</code>
+<pre>&lt;a href="#" title="#" class="btt btt-login"&gt;Login&lt;/a&gt;</pre>
 
 		</article><!-- end #layout -->
 	
 		<article id="columns">
-			<h1>Columns <sup><a href="http://f2fw.com/docs/columns" title="Columns">docs</a></sup></h1>
+			<h1>Columns <sup><a href="http://f2fw.com/documentation/columns" title="Columns">docs</a></sup></h1>
 			<p class="p16">Columns uses a intuitive grid-like system to help you create layouts and you have up to 6 adaptable columns containers: you define your own width and margins.</p>
-			<p>A two column layout is composed from the main container, with a <strong>c2</strong> class applied, and its children containers with a <strong>c21</strong> and <strong>c22</strong> class. You can clear the floated inner childrens, either by adding a <strong>clearing</strong> class after closing the last children or add a new class, <strong>clearfix</strong>, along with the c2 class applied.</p>
-<pre>&lt;div id="column" class="c2"&gt;
+			<p>A two column layout is composed from the main container, with a <strong>c2</strong> class applied, and its children containers with a <strong>c21</strong> and <strong>c22</strong> class. You can clear the floated inner childrens, either by adding a <strong>cl</strong> class after closing the last children or add a new class, <strong>cf</strong>, along with the c2 class applied.</p>
+<pre>&lt;div id="column" class="c2 cf"&gt;
 	&lt;div class="c21"&gt;
 
 	&lt;/div&gt;&lt;!-- end c21 --&gt;
 	&lt;div class="c22"&gt;
 
 	&lt;/div&gt;&lt;!-- end c22 --&gt;
-	&lt;div class="clearing"&gt;&lt;/div&gt;
 &lt;/div&gt;&lt;!-- end c2 --&gt;</pre>
-			<div class="c2 clearfix">
+			<div class="c2 cf">
 				<div class="c21">
 					<p>Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop. When the going gets tough, he's really rough, with a Hong Kong Phooey chop (Hi-Ya!). Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. Hong Kong Phooey, he's fan-riffic!</p>
 				</div><!-- end .c21 -->
@@ -89,7 +88,7 @@ a.btt-login:hover { background-position:-10px -50px; }</pre>
 				</div><!-- end .c22 -->			
 			</div><!-- end .c2 -->
 			
-			<div class="c3 clearfix">
+			<div class="c3 cf">
 				<div class="c31">
 					<p>Ten years ago a crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Today, still wanted by the government, they survive as soldiers of fortune. If you have a problem and no one else can help, and if you can find them, maybe you can hire the A-team.</p>
 				</div><!-- end .c31 -->
@@ -101,7 +100,7 @@ a.btt-login:hover { background-position:-10px -50px; }</pre>
 				</div><!-- end .c33 -->
 			</div><!-- end .c3 -->
 			
-			<div class="c4 clearfix">
+			<div class="c4 cf">
 				<div class="c41">
 					<p>There's a voice that keeps on calling me. Down the road, that's where I'll always be. Every stop I make, I make a new friend. Can't stay for long, just turn around and I'm gone again. Maybe tomorrow, I'll want to settle down, Until tomorrow, I'll just keep moving on.</p>
 				</div><!-- end .c41 -->
@@ -116,7 +115,7 @@ a.btt-login:hover { background-position:-10px -50px; }</pre>
 				</div><!-- end .c44 -->
 			</div><!-- end .c4 -->
 			
-			<div class="c5 clearfix">
+			<div class="c5 cf">
 				<div class="c51">
 					<p>Ten years ago a crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Today, still wanted by the government, they survive as soldiers of fortune. If you have a problem and no one else can help, and if you can find them, maybe you can hire the A-team.</p>
 				</div><!-- end .c51 -->
@@ -134,7 +133,7 @@ a.btt-login:hover { background-position:-10px -50px; }</pre>
 				</div><!-- end .c55 -->
 			</div><!-- end .c5 -->
 			
-			<div class="c6 clearfix">
+			<div class="c6 cf">
 				<div class="c61">
 					<p>This is my boss, Jonathan Hart, a self-made millionaire, he's quite a guy. This is Mrs H., she's gorgeous, she's one lady who knows how to take care of herself. By the way, my name is Max. I take care of both of them, which ain't easy, 'cause when they met it was MURDER!</p>
 				</div><!-- end .c61 -->
@@ -158,7 +157,7 @@ a.btt-login:hover { background-position:-10px -50px; }</pre>
 		</article><!-- end #columns -->
 		
 		<article id="typography">
-			<h1>Typography <sup><a href="http://f2fw.com/docs/typography" title="Typography">docs</a></sup></h1>
+			<h1>Typography <sup><a href="http://f2fw.com/documentation/typography" title="Typography">docs</a></sup></h1>
 			<p class="p16">Typography adds basic styling for HTML tags related to typography.</p>
 			
 			<p>Top Cat! The <strong>most effectual</strong> Top Cat! Who's intellectual close friends get to call him T.C., providing<sub>[1]</sub> it's with dignity. Top Cat! The <em>indisputable leader</em> of the gang. He's the boss, <small>he's a pip</small>, he's the championship. He's the most tip<sup>[1]</sup> top, Top Cat.</p>
@@ -251,7 +250,7 @@ a.btt-login:hover { background-position:-10px -50px; }</pre>
 		</article><!-- end #typography -->
 
 		<article id="navigation">
-			<h1>Navigation <sup><a href="http://f2fw.com/docs/navigation" title="Navigation">docs</a></sup></h1>
+			<h1>Navigation <sup><a href="http://f2fw.com/documentation/navigation" title="Navigation">docs</a></sup></h1>
 			<p class="p16">Navigation adds components for a web document, such as: breadcrumbs, tabs, pagination and jump to the top.</p>
 			
 			<h4>Breadcrumbs</h4>
@@ -268,7 +267,7 @@ a.btt-login:hover { background-position:-10px -50px; }</pre>
 						<li><a href="#" title="#">The first tab: inactive</a></li>
 						<li class="active"><a href="#" title="#">The second tab: active</a></li>
 						<li><a href="#" title="#">The third tab: inactive</a></li>
-						<div class="clearing"></div>
+						<div class="cl"></div>
 					</ul>
 				</div><!-- end .tabs-n -->
 				<div class="tabs-c">
@@ -281,19 +280,11 @@ a.btt-login:hover { background-position:-10px -50px; }</pre>
 			<h4>Pagination</h4>
 			<p>Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop.</p>
 			<div class="pagination">
-				<ul class="clearfix">
+				<ul class="cf">
 					<li class="page">Page 2</li>
 					<li class="ext"><a href="#" title="#">&larr; Prev</a></li>
 					<li class="active"><a href="#" title="#">1</a></li>
 					<li><a href="#" title="#">2</a></li>
-					<li class="between">
-						<a href="#" title="#">...</a>
-						<form method="post" action="/">
-							<label for="page-no">Which page?</label>
-							<input type="text" id="page-no" name="page" class="ipt" placeholder="e.g. 2" required="required" pattern="[-0-9]+" />
-							<input type="submit" name="submit" value="&rarr;" class="ipt-submit" />
-						</form>
-					</li>
 					<li><a href="#" title="#">19</a></li>
 					<li><a href="#" title="#">20</a</li>
 					<li class="ext"><a href="#" title="#">Next &rarr;</a></li>
@@ -309,7 +300,7 @@ a.btt-login:hover { background-position:-10px -50px; }</pre>
 		</article><!-- end #navigation -->
 		
 		<article id="notifications">
-			<h1>Notifications <sup><a href="http://f2fw.com/docs/notifications" title="Notifications">docs</a></sup></h1>
+			<h1>Notifications <sup><a href="http://f2fw.com/documentation/notifications" title="Notifications">docs</a></sup></h1>
 			<p class="p16">Notifications includes 4 types of styled messages, like: information, success, warning and error message.</p>
 			
 			<div class="notifications">
@@ -331,12 +322,6 @@ a.btt-login:hover { background-position:-10px -50px; }</pre>
 				</div><!-- end .error -->
 			</div><!-- end .notifications -->
 		</article><!-- end #notifications -->
-
-		<article id="debug">
-			<h1>Debug <sup><a href="http://f2fw.com/docs/debug" title="Debug">docs</a></sup></h1>
-			<p class="p16">Start debugging your HTML/CSS by simply adding a "debug" class to the "body" element.</p>
-			<p>A common and quite effective way to debug CSS issues is to add various colored borders to your containers; with <strong>Debug</strong> you can easily do that by appending the <strong>debug</strong> class to your body tag: this will automatically insert borders to each framework's node main container and its inner children.</p>
-		</article><!-- end #debug -->
 		
 	</div><!-- end #container -->
 </body>

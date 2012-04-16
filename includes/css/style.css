@@ -1,9 +1,9 @@
 /*
-	f2fw: progessive html/css framework
+	F2fw: HTML/CSS framework for PSD/AI to HTML/CSS
 	http://f2fw.com
 
-	Version: 2.0.2
- 	Updated: 14 January 2012
+	Version: 3.0.0
+ 	Updated: 16 April 2012
 	License: Apache 2.0
 
 	------------------------------------------------------------------------
@@ -167,7 +167,7 @@ body {
 	*	Logo
 	*	Adding "incl" to the H3 tag will automatically add logo.png from includes/images
 	*	You need to specificy width and height only
-	*	Suggestion: #logo, #logo h3.incl, #logo h3.incl a { width:100px; height:100px; }
+	*	Suggestion: #logo h3.incl a { width:100px; height:100px; }
 */
 #logo {
 	float:left;
@@ -206,103 +206,103 @@ body {
 /*
 	*	Floating classes
 */
-.floatleft {
+.lf {
 	float:left;
 }
-.floatright {
+.rf {
 	float:right;
 }
-.floatnone {
+.mf {
 	float:none;
 }
-.clearing {
+.cl {
 	clear:both;
 }
 
 /*
 	*	The clearfix hack: http://www.positioniseverything.net/easyclearing.html
 */
-.clearfix:after {
+.cf:after {
 	content:"";
 	display:block;
 	height:0;
 	clear:both;
 	visibility:hidden;
 }
-.clearfix {
+.cf {
 	display:inline-block;
 }
 
 /*
 	*	Alignment classes
 */
-.alignleft {
+.al {
 	text-align:left;
 }
-.alignright {
+.ar {
 	text-align:right;
 }
-.aligncenter {
+.ac {
 	text-align:center;
 }
 
 /*
 	*	Margin classes
 */
-.marginauto {
+.ma {
 	margin:0 auto;
 }
-.nomargintop {
+.nmt {
 	margin-top:0 !important;
 }
-.nomarginright {
+.nmr {
 	margin-right:0 !important;
 }
-.nomarginbottom {
+.nmb {
 	margin-bottom:0 !important;
 }
-.nomarginleft {
+.nml {
 	margin-left:0 !important;
 }
 
 /*
 	*	Border classes
 */
-.noborder {
+.nb {
 	border:0 !important;
 }
-.nobordertop {
+.nbt {
 	border-top:none !important;
 }
-.noborderright {
+.nbr {
 	border-right:none !important;
 }
-.noborderbottom {
+.nbb {
 	border-bottom:none !important;
 }
-.noborderleft {
+.nbl {
 	border-left:none !important;
 }
 
 /*
 	*	Padding classes
 */
-.padding {
+.p {
 	padding:10px;
 }
-.nopadding {
+.np {
 	padding:0 !important;
 }
-.nopaddingtop {
+.npt {
 	padding-top:0 !important;
 }
-.nopaddingright {
+.npr {
 	padding-right:0 !important;
 }
-.nopaddingbottom {
+.npb {
 	padding-bottom:0 !important;
 }
-.nopaddingleft {
+.npl {
 	padding-left:0 !important;
 }
 
@@ -310,10 +310,10 @@ body {
 	*	Image alignment classes
 	*	Set a fixed margin around the image
 */
-img.floatleft {
+img.lf {
 	margin:7px 15px 5px 0;
 }
-img.floatright {
+img.rf {
 	margin:7px 0 5px 15px;
 }
 
@@ -485,8 +485,8 @@ ol li:last-child {
 */
 ul.nostyle,
 ol.nostyle {
+	padding:0;
 	margin:0;
-	padding:0 0 18px 0;
 }
 ul.nostyle li,
 ol.nostyle li {
@@ -769,43 +769,6 @@ div.pagination ul li.page {
 	color:#777;
 	margin:0 20px 0 0;
 }
-div.pagination li.between {
-	position:relative;
-	cursor:pointer;
-}
-div.pagination li.between:hover {
-	background:#EEE;
-}
-div.pagination li.between:hover form {
-	display:block;
-}
-div.pagination li.between form {
-	display:none;
-	position:absolute;
-	z-index:1;
-	top:18px;
-	left:0;
-	width:73px;
-	background:#EEE;
-	padding:5px;
-}
-div.pagination li.between form label {
-	font:normal 11px/15px Verdana, sans-serif;
-	margin:0 0 5px 0;
-}
-div.pagination li.between form input.ipt {
-	width:50px;
-	font:normal 11px/18px Verdana, sans-serif;
-	color:#333;
-	padding:3px 18px 3px 3px;
-}
-div.pagination li.between form input.ipt-submit {
-	border:0;
-	cursor:pointer;
-	position:absolute;
-	top:28px;
-	right:8px;
-}
 div.pagination ul li.ext {
 	font:normal bold 12px/20px Arial, sans-serif;
 }
@@ -859,125 +822,4 @@ div.notifications p.title {
 	line-height:16px;
 	text-transform:uppercase;
 	padding:10px 10px 0 10px;
-}
-
-/*
-	*
-	*
-	*	Debug
-	*
-	*	With Debug you can easily start debugging your CSS file by adding a
-	*	"debug" class to your body element and have various colored borders
-	*	applied to your web document.
-	*
-	*
-*/
-body.debug #wrapper,
-body.debug #container,
-body.debug #header,
-body.debug #logo,
-body.debug #logo h3,
-body.debug #logo h3 a,
-body.debug #menu,
-body.debug #menu ul,
-body.debug #menu ul li,
-body.debug #menu ul li a {
-	border:1px solid red !important;
-}
-body.debug .clearing:after,
-body.debug .clearfix:after {
-	visibility:visible;
-	background:black;
-	display:block;
-	height:20px;
-	width:100%;
-	color:#FFF;
-}
-body.debug .clearing:after {
-	content:"(clearing)";
-}
-body.debug .clearfix:after {
-	content:"(clearfix)";
-}
-body.debug div.c2,
-body.debug div.c3,
-body.debug div.c4,
-body.debug div.c5,
-body.debug div.c6,
-body.debug div.c2 div.c21,
-body.debug div.c2 div.c22,
-body.debug div.c3 div.c31,
-body.debug div.c3 div.c32,
-body.debug div.c3 div.c33,
-body.debug div.c4 div.c41,
-body.debug div.c4 div.c42,
-body.debug div.c4 div.c43,
-body.debug div.c4 div.c44,
-body.debug div.c5 div.c51,
-body.debug div.c5 div.c52,
-body.debug div.c5 div.c53,
-body.debug div.c5 div.c54,
-body.debug div.c5 div.c55,
-body.debug div.c6 div.c61,
-body.debug div.c6 div.c62,
-body.debug div.c6 div.c63,
-body.debug div.c6 div.c64,
-body.debug div.c6 div.c65,
-body.debug div.c6 div.c66 {
-	border:1px solid green !important;
-}
-body.debug h1,
-body.debug h2,
-body.debug h3,
-body.debug h4,
-body.debug h5,
-body.debug h6,
-body.debug p,
-body.debug small,
-body.debug sup,
-body.debug sub,
-body.debug abbr,
-body.debug address,
-body.debug blockquote,
-body.debug ul,
-body.debug ul li,
-body.debug ul li ul,
-body.debug ul li ul li,
-body.debug ol li,
-body.debug ol li,
-body.debug ol li ol,
-body.debug ol li ol li,
-body.debug table,
-body.debug table tr,
-body.debug table th,
-body.debug table td,
-body.debug pre,
-body.debug code,
-body.debug hr {
-	border:1px solid black !important;
-}
-body.debug div.breadcrumbs,
-body.debug div.breadcrumbs p,
-body.debug div.breadcrumbs span,
-body.debug div.tabs,
-body.debug div.tabs div.tabs-n,
-body.debug div.tabs div.tabs-n ul,
-body.debug div.tabs div.tabs-n ul li,
-body.debug div.tabs div.tabs-n ul li a,
-body.debug div.tabs div.tabs-c,
-body.debug div.jump,
-body.debug div.jump a,
-body.debug div.pagination,
-body.debug div.pagination p,
-body.debug div.pagination span,
-body.debug div.pagination a {
-	border:1px solid navy !important;
-}
-body.debug div.notifications,
-body.debug div.notifications div.inform,
-body.debug div.notifications div.success,
-body.debug div.notifications div.warning,
-body.debug div.notifications div.error,
-body.debug div.notifications p {
-	border:1px solid MediumBlue;
 }

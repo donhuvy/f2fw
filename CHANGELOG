@@ -1,12 +1,42 @@
-{2.0.2: 14 January 2011}
+{3.0.0: 16 April 2012}
+	Layout
+		- "clearfix" renamed to "cf"
+		- "clearing" renamed to "cl"
+		- "alignleft" renamed to "al"
+		- "alignright" renamed to "ar"
+		- "aligncenter" renamed to "ac"
+		- "marginauto" renamed to "ma"
+		- "nomargintop" renamed to "nmt"
+		- "nomarginright" renamed to "nmr"
+		- "nomarginbottom" renamed to "nmb"
+		- "nomarginleft" renamed to "nml"
+		- "noborder" renmed to "nb"
+		- "nobordertop" renamed to "nbt"
+		- "noborderright" renamed to "nbr"
+		- "noborderbottom" renamed to "nbb"
+		- "noborderleft" renamed to "nbl"
+		- "padding" renamed to "p"
+		- "nopadding" renamed to "np"
+		- "nopaddingtop" renamed to "npt"
+		- "nopaddingright" renamed to "npr"
+		- "nopaddingbottom" renamed to "npb"
+		- "nopaddingleft" renamed to "npl"
+		- "floatleft" renamed to "lf"
+		- "floatright" renamed to "rf"
+		- "floatnone" renamed to "nf"
+	
+	Debug
+		- Removed
+	
+{2.0.2: 14 January 2012}
 	Typography
 		- Incorrect behaviour of "code" inside a "pre"
 
-{2.0.1: 12 January 2011}
+{2.0.1: 12 January 2012}
 	Typography
 		- Fixed "code" to be block and "pre" to be inline.
 		
-{2.0.0: 11 January 2011}
+{2.0.0: 11 January 2012}
 	Internet Explorer
 		- Separate stylesheets for IE7 and IE8.
 		- Fixed an incorrect behaviour of ie6.notify.js
