@@ -2,8 +2,8 @@
 	F2fw: HTML/CSS framework for PSD/AI to HTML/CSS
 	http://f2fw.com
 
-	Version: 3.0.0
-	Updated: 16 April 2012
+	Version: 3.0.1
+	Updated: 19 May 2012
 	License: Apache 2.0
 
 	------------------------------------------------------------------------
@@ -34,7 +34,7 @@
 	*
 	*
 */
-.clearfix {
-	zoom:1;
+.cf {
 	display:block;
+	zoom:1;
 }

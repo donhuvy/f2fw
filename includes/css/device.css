@@ -2,13 +2,13 @@
 	F2fw: HTML/CSS framework for PSD/AI to HTML/CSS
 	http://f2fw.com
 
-	Version: 3.0.0
-	Updated: 16 April 2012
+	Version: 3.0.1
+	Updated: 19 May 2012
 	License: Apache 2.0
 
 	------------------------------------------------------------------------
 	
-	device.css
+	device.css		- THIS FILE ISN'T TESTED OR UPDATED -
 	
 	------------------------------------------------------------------------
 
@@ -26,7 +26,6 @@
 	See the License for the specific language governing permissions and
 	limitations under the License.
 */
-
 
 /*
 	*
@@ -57,10 +56,10 @@
 */
 #wrapper,
 #container {
+	text-align:left;
+	margin:2% auto;
 	width:100%;
 	padding:5%;
-	margin:2% auto;
-	text-align:left;
 }
 #logo,
 #menu {
