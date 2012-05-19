@@ -1,9 +1,10 @@
 /*
 	*
-	*	F2fw 3.0.0 (http://f2fw.com)
+	*	F2fw 3.0.1 (http://f2fw.com)
+	*	Notice: this file isn't tested or update
 	*
 */
-#wrapper,#container{width:100%;margin:0 auto;}#logo,#menu{float:none;}a:link,a:visited,a:hover,a:active{color:#000;text-decoration:underline;}div.c2,div.c3,div.c4,div.c5,div.c6{display:block;}div.c2 div.c21,div.c2 div.c22,div.c3 div.c31,div.c3 div.c32,div.c3 div.c33,div.c4 div.c41,div.c4 div.c42,div.c4 div.c43,div.c4 div.c44,div.c5 div.c51,div.c5 div.c52,div.c5 div.c53,div.c5 div.c54,div.c5 div.c55,div.c6 div.c61,div.c6 div.c62,div.c6 div.c63,div.c6 div.c63,div.c6 div.c64,div.c6 div.c65,div.c6 div.c66{float:none;width:100%;margin-right:0;}div.pagination,div.jump{display:none;}div.notifications div.inform,div.notifications div.success,div.notifications div.warning,div.notifications div.error{background:#EEE;border:1px solid #CCC;margin:0 0 15px;}
+#wrapper,#container{width:100%;margin:0 auto;}#logo,#menu{float:none;}a:link,a:visited,a:hover,a:active{text-decoration:underline;color:#000;}div.c2,div.c3,div.c4,div.c5,div.c6{display:block;}div.c2 div.c21,div.c2 div.c22,div.c3 div.c31,div.c3 div.c32,div.c3 div.c33,div.c4 div.c41,div.c4 div.c42,div.c4 div.c43,div.c4 div.c44,div.c5 div.c51,div.c5 div.c52,div.c5 div.c53,div.c5 div.c54,div.c5 div.c55,div.c6 div.c61,div.c6 div.c62,div.c6 div.c63,div.c6 div.c63,div.c6 div.c64,div.c6 div.c65,div.c6 div.c66{margin-right:0;float:none;width:100%;}div.pagination,div.jump{display:none;}div.notifications div.inform,div.notifications div.success,div.notifications div.warning,div.notifications div.error{border:1px solid #CCC;background:#EEE;margin:0 0 15px;}
 
 /*
 	*
