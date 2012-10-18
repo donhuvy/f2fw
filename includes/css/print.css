@@ -1,9 +1,9 @@
 /*
 	F2fw: HTML/CSS framework for PSD/AI to HTML/CSS
-	http://f2fw.com
+	http://artmov.com/f2fw
 
-	Version: 3.0.1
-	Updated: 19 May 2012
+	Version: 3.0.2
+	Updated: 18 Oct 2012
 	License: Apache 2.0
 
 	------------------------------------------------------------------------
@@ -34,7 +34,6 @@
 	*
 	*
 */
-#wrapper,
 #container {
 	width:100%;
 	margin:0 auto;
@@ -66,34 +65,34 @@ a:active {
 	*
 	*
 */
-div.c2,
-div.c3,
-div.c4,
-div.c5,
-div.c6 {
+.c2,
+.c3,
+.c4,
+.c5,
+.c6 {
 	display:block;
 }
-div.c2 div.c21,
-div.c2 div.c22,
-div.c3 div.c31, 
-div.c3 div.c32,
-div.c3 div.c33,
-div.c4 div.c41,
-div.c4 div.c42,
-div.c4 div.c43,
-div.c4 div.c44,
-div.c5 div.c51,
-div.c5 div.c52,
-div.c5 div.c53,
-div.c5 div.c54,
-div.c5 div.c55,
-div.c6 div.c61,
-div.c6 div.c62,
-div.c6 div.c63,
-div.c6 div.c63,
-div.c6 div.c64,
-div.c6 div.c65,
-div.c6 div.c66 {
+.c2 .c21,
+.c2 .c22,
+.c3 .c31, 
+.c3 .c32,
+.c3 .c33,
+.c4 .c41,
+.c4 .c42,
+.c4 .c43,
+.c4 .c44,
+.c5 .c51,
+.c5 .c52,
+.c5 .c53,
+.c5 .c54,
+.c5 .c55,
+.c6 .c61,
+.c6 .c62,
+.c6 .c63,
+.c6 .c63,
+.c6 .c64,
+.c6 .c65,
+.c6 .c66 {
 	margin-right:0;
 	float:none;
 	width:100%;
@@ -106,8 +105,8 @@ div.c6 div.c66 {
 	*
 	*
 */
-div.pagination,
-div.jump {
+.pagination,
+.jump {
 	display:none;
 }
 
@@ -118,10 +117,10 @@ div.jump {
 	*
 	*
 */
-div.notifications div.inform,
-div.notifications div.success,
-div.notifications div.warning,
-div.notifications div.error {
+.notifications .inform,
+.notifications .success,
+.notifications .warning,
+.notifications .error {
 	border:1px solid #CCC;
 	margin:0 0 15px 0;
 	background:#EEE;
