@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+{3.0.2: 18 Oct 2012}
+  General
+    - Remove "div" from Layout, etc.
+
+>>>>>>> develop
 {3.0.0: 16 April 2012}
 	Layout
 		- "clearfix" renamed to "cf"

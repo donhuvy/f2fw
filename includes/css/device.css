@@ -1,13 +1,194 @@
 /*
-	*
-	*	F2fw 3.0.1 (http://f2fw.com)
-	*	Notice: this file isn't tested or update
-	*
+	F2fw: HTML/CSS framework for PSD/AI to HTML/CSS
+	http://artmov.com/f2fw
+
+	Version: 3.0.2
+	Updated: 18 Oct 2012
+	License: Apache 2.0
+
+	------------------------------------------------------------------------
+	
+	device.css		- THIS FILE ISN'T TESTED OR UPDATED -
+	
+	------------------------------------------------------------------------
+
+	Copyright 2012 Artmov
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+	http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
 */
-#wrapper,#container{text-align:left;width:100%;margin:2% auto;padding:5%;}#logo,#menu{float:none;}h1{font-size:2em;line-height:1.2em;}h2{font-size:1.8em;line-height:1.2em;}h3{font-size:1.6em;line-height:1.2em;}h4{font-size:1.4em;line-height:1.2em;}h6{font-size:1em;line-height:1.2em;}blockquote{font-size:1em;line-height:1.3em;padding:0;}blockquote p{font-size:1em;line-height:1.3em;}table{font-size:0.9em;line-height:1.2em;}table td,table th{padding:4px;}div.c2,div.c3,div.c4,div.c5,div.c6{display:block;}div.c2 div.c21,div.c2 div.c22,div.c3 div.c31,div.c3 div.c32,div.c3 div.c33,div.c4 div.c41,div.c4 div.c42,div.c4 div.c43,div.c4 div.c44,div.c5 div.c51,div.c5 div.c52,div.c5 div.c53,div.c5 div.c54,div.c5 div.c55,div.c6 div.c61,div.c6 div.c62,div.c6 div.c63,div.c6 div.c63,div.c6 div.c64,div.c6 div.c65,div.c6 div.c66{float:none;width:100%;margin-right:0;}div.tabs div.tabs-n ul li{float:none;font-size:0.9em;line-height:1.2em;}div.tabs div.tabs-n ul li a{border-bottom:0;margin-right:0;}div.tabs div.tabs-c{margin-top:0;}h5,p.p16,pre,code{font-size:1.2em;line-height:1.2em;}p,address,ul li,ol li{font-size:0.9em;line-height:1.3em;}
 
 /*
 	*
-	*	Start
+	*	iPad
 	*
 */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	
+}
+
+/*
+	*
+	*	iPhone
+	*
+*/
+@media screen and (max-width: 768px) {
+	
+
+}
+
+/*
+	*
+	*
+	*	Layout
+	*
+	*
+*/
+#container {
+	text-align:left;
+	margin:2% auto;
+	width:100%;
+	padding:5%;
+}
+#logo,
+#menu {
+	float:none;
+}
+
+/*
+	*
+	*
+	*	Typography
+	*
+	*
+*/
+h1 {
+	font-size:2.0em;
+	line-height:1.2em;
+}
+h2 {
+	font-size:1.8em;
+	line-height:1.2em;
+}
+h3 {
+	font-size:1.6em;
+	line-height:1.2em;
+}
+h4 {
+	font-size:1.4em;
+	line-height:1.2em;
+}
+h5 {
+	font-size:1.2em;
+	line-height:1.2em;
+}
+h6 {
+	font-size:1.0em;
+	line-height:1.2em;
+}
+p,
+address {
+	font-size:0.9em;
+	line-height:1.3em;
+}
+p.p16 {
+	font-size:1.2em;
+	line-height:1.2em;
+}
+ul li,
+ol li {
+	font-size:0.9em;
+	line-height:1.3em;
+}
+pre,
+code {
+	font-size:1.2em;
+	line-height:1.2em;
+}
+blockquote {
+	font-size:1.0em;
+	line-height:1.3em;
+	padding:0;
+}
+blockquote p {
+	font-size:1.0em;
+	line-height:1.3em;
+}
+table {
+	font-size:0.9em;
+	line-height:1.2em;
+}
+table td,
+table th {
+	padding:4px;
+}
+
+/*
+	*
+	*
+	*	Columns
+	*
+	*
+*/
+.c2,
+.c3,
+.c4,
+.c5,
+.c6 {
+	display:block;
+}
+.c2 .c21,
+.c2 .c22,
+.c3 .c31, 
+.c3 .c32,
+.c3 .c33,
+.c4 .c41,
+.c4 .c42,
+.c4 .c43,
+.c4 .c44,
+.c5 .c51,
+.c5 .c52,
+.c5 .c53,
+.c5 .c54,
+.c5 .c55,
+.c6 .c61,
+.c6 .c62,
+.c6 .c63,
+.c6 .c63,
+.c6 .c64,
+.c6 .c65,
+.c6 .c66 {
+	float:none;
+	width:100%;
+	margin-right:0;
+}
+
+/*
+	*
+	*
+	*	Navigation
+	*
+	*
+*/
+.tabs .tabs-n ul li {
+	float:none;
+	font-size:0.9em;
+	line-height:1.2em;
+}
+.tabs .tabs-n ul li a {
+	border-bottom:0;
+	margin-right:0;
+}
+.tabs .tabs-c {
+	margin-top:0;
+}
